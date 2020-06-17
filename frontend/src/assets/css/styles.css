@@ -313,9 +313,14 @@ display: block;
 	color:#000000;
 }
 
+
+.edit{
+	cursor: hand;
+}
 .article-item a{
 	display: block;
-	color:#444;
+	color:#444; 
+	
 	text-decoration: none;
 	margin-top: 10px;
 	margin-left: 18px;
