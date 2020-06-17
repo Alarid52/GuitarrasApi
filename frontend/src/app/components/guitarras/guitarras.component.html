@@ -1,7 +1,6 @@
-  
-     
+ 
         <div class="row">
-          <div class="col s4">
+          <div class="col s2">
 
             <div class="card">
               <div class="card-content">
@@ -89,46 +88,47 @@
               </div>
             </div>
           </div>
-          <div class="col s8">
-            <table class="striped highlight black-text">
-              <thead>
-                <th>id</th>
-                <th>marca</th>
-                <th>modelo</th>
-                <th>color</th>
-                <th>largo</th>
-                <th>ancho</th>
-                <th>peso</th>
-                <th>tipo</th>
-                <th>N.Cuerdas</th>
-              </thead>
-              <tbody>
-                <tr *ngFor="let guitarra of guitarraService.guitarras">
-                  <td>{{ guitarra.id }}</td>
-                  <td>{{ guitarra.marca }}</td>
-                  <td>{{ guitarra.modelo }}</td>
-                  <td>{{ guitarra.color }}</td>
-                  <td>{{ guitarra.largo }}</td>
-                  <td>{{ guitarra.ancho }}</td>
-                  <td>{{ guitarra.peso }}</td>
-                  <td>{{ guitarra.tipo }}</td>
-                  <td>{{ guitarra.numCuerdas }}</td>
-                  <td>
-                    <a (click)="editGuitarra(guitarra)">
-                      <i class="material-icons">edit</i>
-                    </a>
-                                          
-                    <a (click)="deleteGuitarra(guitarra._id)">
-                      <i class="material-icons">delete</i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-
-        
         </div>
+
+
+
+        <div class="col s4">
+          <table class="striped highlight black-text">
+            <thead>
+              <th>id</th>
+              <th>marca</th>
+              <th>modelo</th>
+              <th>color</th>
+              <th>largo</th>
+              <th>ancho</th>
+              <th>peso</th>
+              <th>tipo</th>
+              <th>N.Cuerdas</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let guitarra of guitarraService.guitarras">
+                <td>{{ guitarra.id }}</td>
+                <td>{{ guitarra.marca }}</td>
+                <td>{{ guitarra.modelo }}</td>
+                <td>{{ guitarra.color }}</td>
+                <td>{{ guitarra.largo }}</td>
+                <td>{{ guitarra.ancho }}</td>
+                <td>{{ guitarra.peso }}</td>
+                <td>{{ guitarra.tipo }}</td>
+                <td>{{ guitarra.numCuerdas }}</td>
+                <td>
+                  <a (click)="editGuitarra(guitarra)">
+                    <i class="material-icons">edit</i>
+                  </a>
+                                        
+                  <a (click)="deleteGuitarra(guitarra._id)">
+                    <i class="material-icons">delete</i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
 
 
         
