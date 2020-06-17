@@ -1,4 +1,8 @@
+import { identifierName } from '@angular/compiler';
+
 export class Guitarra {
+
+
 
     constructor(id= 0, modelo = '', marca = '', color= '', largo = 0, ancho= 0, peso= 0, tipo= '', numCuerdas = 0,imagen=''){
         this.id =id;
@@ -13,6 +17,7 @@ export class Guitarra {
         this.imagen=imagen;
 
     }
+
     
     id:  Number;
     modelo: String;
