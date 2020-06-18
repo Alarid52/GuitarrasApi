@@ -3,7 +3,7 @@
 body{
 	text-align: center;
 	background: white;
-	background: url(../images/fondo.jpg);
+	background: url(../images/fondo.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -67,7 +67,7 @@ body{
 	#Menu{
 		width: 50%;
 		float: right;
-		margin-top: -55px;
+		margin-top: 20px;
 		margin-left: 500px;
 		margin-right: -90px;
 		background: rgb(102, 101, 101);
@@ -281,12 +281,13 @@ body{
 	}
 	
 	.article-item{
+		background-color: white;
 		width: 50%;
 		border-bottom:  1px solid #eee;
 		border-right: 1px solid black;
 		padding-bottom: 0px;
 		padding-top: 0px;
-		margin-left: 400px;
+		margin-left: 630px;
 		text-align: left;	
 	}
 	.article-item .image-wrap{
