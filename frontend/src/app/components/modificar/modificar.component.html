@@ -53,9 +53,9 @@
           <br />
           <div class="card-action">
             <div class="input-field col-s11">
-              <!-- <button class="btn right" style="line-height: 3px;"
-                (click)="resetForm(guitarraForm)">Clean</button> -->
-              <button class="btn right" style="line-height: 3px; cursor: hand" [disabled]="guitarraForm.invalid">Save</button>
+               <button class="btn right" style="line-height: 3px;"
+                (click)="modGuitarra(guitarraForm)">Guardar</button> 
+              <button class="btn right" style="line-height: 3px; cursor: hand" [disabled]="guitarraForm.invalid">Modificar</button>
             </div>
 
           </div>
@@ -111,16 +111,20 @@
         <th>N.Cuerdas</th>
       </thead>
       <tbody>
-        <tr *ngFor="let guitarra of guitarraService.guitarras">
-          <td>{{ guitarra.id }}</td>
-          <td>{{ guitarra.marca }}</td>
-          <td>{{ guitarra.modelo }}</td>
-          <td>{{ guitarra.color }}</td>
-          <td>{{ guitarra.largo }}</td>
-          <td>{{ guitarra.ancho }}</td>
-          <td>{{ guitarra.peso }}</td>
-          <td>{{ guitarra.tipo }}</td>
-          <td>{{ guitarra.numCuerdas }}</td>
+        <tr *ngFor="let guitarra of guitarraService.guitarras" style="text-align: center;">
+          <td  style="text-align: center;">{{ guitarra.id }}</td>
+          <td  style="text-align: center;">{{ guitarra.marca }}</td>
+          <td  style="text-align: center;">{{ guitarra.modelo }}</td>
+          <td  style="text-align: center;">{{ guitarra.color }}</td>
+          <td  style="text-align: center;">{{ guitarra.largo }}</td>
+          <td  style="text-align: center;">{{ guitarra.ancho }}</td>
+          <td  style="text-align: center;">{{ guitarra.peso }}</td>
+          <td  style="text-align: center;">{{ guitarra.tipo }}</td>
+          <td  style="text-align: center;"><img src="{{ guitarra.imagen }}" alt="{{ guitarra.modelo }}" style="width: 50px;height: 60px;"></td>
+
+          <td style="text-align: center;"> {{guitarra.numCuerdas}}</td>
+        
+
           <td>
             <a (click)="editGuitarra(guitarra)">
               <i class="material-icons">edit</i>
